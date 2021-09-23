@@ -1,0 +1,124 @@
+
+.hero {
+  background: rgba(#fff, .35);
+  h1 {
+    font: 700 36px/54px 'Roboto Condensed';
+    color: $green;
+    @media(max-width: 575px) {
+      font-size: 38px;
+      line-height: 42px;
+    }
+    @media(max-width: 420px){
+      font-size: 36px;
+      line-height: 40px;
+    }
+    @media(max-width: 320px){
+      font-size: 34px;
+      line-height: 36px;
+    }
+  }
+  h2 {
+    font: 400 32px 'Roboto Condensed';
+    color: $brown;
+    @media(max-width: 575px){
+      font-size: 20px;
+      line-height: 26px;
+    }
+    margin: 0 auto;
+    @media(max-width: 1024px){
+      width: 70%;
+    }
+    @media(max-width: 991px){
+      width: 75%;
+    }
+    @media(max-width: 767px){
+      width: 100%;
+    }
+  }
+  h3 {
+    font: 300 28px 'Roboto Condensed';
+    color: #fff;
+    span{
+      font: 700 31px 'Roboto Condensed';
+    }
+  }
+  .box {
+    color: #fff;
+    p {
+      font: 400 22px/30px 'Roboto Condensed';
+      color: #fff;
+      margin: 0;
+    }
+    .content{
+      height: 160px;
+      @media(max-width:991px){
+        height: 20%;
+      }
+      @media(max-width: 767px){
+        height: auto;
+      }
+    }
+    .content1{
+      h3{
+        font-size: 28px;
+        font-weight: 700;
+      }
+  }
+    .content2{
+      h3{
+        em{
+          font-weight: 400;
+        }
+      }
+      .btn-primary{
+        background: $brown;
+        color: #fff;
+        &:hover{
+          background: $darkgreen;
+        }
+        &:focus{
+          box-shadow: 0 0 0 0.2rem rgba($orange,0.5);
+        }
+      }
+    }
+  }
+  .left{
+    background: $green;
+  }
+  .right{
+    background: rgba(#998579, .5);
+    } 
+  }
+
+
+#inquiry {
+  background: $brown;
+  color: #fff;
+  h2 {
+    font: italic 300 27px 'Roboto Condensed';
+  }
+  small {
+    font-style: italic;
+  }
+  .form-control{
+    &::placeholder{
+      color: $black;
+    }
+  }
+  .btn-primary{
+    &:hover{
+      background: $green;
+      color: $brown;
+    }
+  }
+}
+.btn-primary{
+  font-size: 22px;
+  padding: .9em 1.25em;
+  width: 11em;
+  white-space: normal;
+  @media(max-width:575px){
+    width: 100%;
+  }
+}
+
